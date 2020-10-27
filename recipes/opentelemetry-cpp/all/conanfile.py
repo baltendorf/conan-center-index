@@ -5,7 +5,7 @@ import os
 class OpentelemetryCppConan(ConanFile):
     name = "opentelemetry-cpp"
     version = "0.0.1"
-    license = "Apache-2.0 License"
+    license = "Apache 2.0 License"
     author = "Ben-A. Altendorf" "b.altendorf@tritime.org"
     url = "https://github.com/baltendorf/conan-center-index"
     description = "Cpp implementation of OpenTelemetry"
@@ -42,6 +42,7 @@ class OpentelemetryCppConan(ConanFile):
         cmake.build()
 
     def package(self):
+        self.copy("LICENSE", src=self._source_subfolder, dst="licenses")
         cmake = self._configure_cmake()
         cmake.install()
 
