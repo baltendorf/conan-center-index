@@ -5,7 +5,7 @@ import os
 class OpentelemetryCppConan(ConanFile):
     name = "opentelemetry-cpp"
     version = "0.0.1"
-    license = "Apach-2.0"
+    license = "Apache-2.0"
     author = "Ben-A. Altendorf" "b.altendorf@tritime.org"
     url = "https://github.com/baltendorf/conan-center-index"
     description = "Cpp implementation of OpenTelemetry"
